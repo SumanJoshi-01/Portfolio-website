@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-heading-font-family);
+    background-color: var(--color-background);
+}
+
+.sub-heading {
+    font-family: var(--para-primary-font-family);
+    font-size: 24px;
+}
+
+.heading-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-first-container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-para {
+    margin-top: 30px;
+}
+
+.about-logo {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.about-card1 {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-holder1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    gap: 100px;
+}
+
+.card-para {
+    color: var(--color-primary);
+}
+
+.card-icon {
+    color: var(--color-primary);
+    font-size: 32px;
+}
+
+.property {
+    width: 350px;
+    height: 180px;
+}
+
+
+/* xs */
+@media (max-width: 475px) {
+    .tile-wrapper {
+        max-width: 380px !important;
+    }
+
+    .sub-heading {
+        text-align: center;
+    }
+
+    .sub-head {
+        font-size: 20px !important;
+    }
+
+    .about-first-container {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .about-head {
+        margin-top: 15px;
+    }
+
+    .about-para {
+        font-size: 12px !important;
+        margin-top: 10px;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .about-para br {
+        display: none;
+    }
+
+    .about-logo {
+        font-size: 25px;
+    }
+
+    .card-holder {
+        flex-direction: column;
+    }
+
+    .about-card1 {
+        width: 300px;
+    }
+
+    .card-heading {
+        font-size: 19px;
+    }
+
+    .card-para {
+        font-size: 14px;
+    }
+
+    .card-para2 {
+        font-size: 12px;
+    }
+
+    .card-para3 {
+        font-size: 13px;
+    }
+
+    .card-holder1 {
+        gap: 20px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .tile-wrapper {
+        max-width: 768px;
+    }
+
+    .profile-pic {
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-para {
+        text-align: justify;
+    }
+
+    .about-para br {
+        display: none;
+    }
+
+    .about-first-container{
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    .card-heading {
+        font-size: 20px;
+    }
+
+    .property {
+        width: 320px;
+    }
+}

@@ -1,0 +1,89 @@
+.heading-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.project-card {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.image {
+    width: 370px;
+    height: 160px;
+    border: 0.5px solid rgb(216, 209, 209);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-para1 {
+    color: #19D535;
+    font-weight: bold;
+}
+
+.project-para2 {
+    color: #232EA7;
+    font-weight: bold;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+}
+
+.skill-card {
+    width: 90px;
+    height: 30px;
+    background-color: #D9D9D9;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+    .tile-wrapper {
+        max-width: 768px;
+    }
+
+    .project-card{
+        width: 300px !important;
+    }
+
+    .image{
+        width: 250px;
+    }
+
+    .skill-card{
+        width: 60px;
+    }
+
+    .para{
+        font-size: 14px;
+    }
+
+    .para-color{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 475px){
+    .tile-wrapper{
+        max-width: 380px;
+    }
+
+    .logo{
+        font-size: 30px;
+    }
+
+    .head-para{
+        font-size: 14px;
+    }
+
+    .card-holder{
+        flex-direction: column;
+    }
+}
